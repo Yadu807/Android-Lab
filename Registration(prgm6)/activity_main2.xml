@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewHeading"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/> <!-- Initially hidden -->
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewEmail"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/> <!-- Initially hidden -->
+
+    <Button
+        android:id="@+id/buttonViewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPassword"
+        android:text="View Details"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
